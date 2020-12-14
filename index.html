@@ -1,1 +1,249 @@
-Hello World, This is Utsav Gadhiya!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsav Gadhiya</title>
+    <style>
+        body {
+            height: 100%;
+            background-color: #1d1f21;
+            color: #c9cacc;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: Menlo, Meslo LG, monospace;
+            line-height: 1.725;
+            text-rendering: geometricPrecision;
+            -webkit-box-flex: 1;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            margin: 0 auto;
+            max-width: 72rem;
+            box-sizing: border-box;
+        }
+
+        #Message {
+            position: fixed;
+            left: 1px;
+            bottom: 2px;
+            background-color: #E6E6E6;
+            border: 1px solid #959595;
+            margin: 0px;
+            padding: 2px 8px;
+            z-index: 102;
+            color: black;
+            font-size: 80%;
+            width: auto;
+            white-space: nowrap;
+        }
+
+        #spinner {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .v-spinner {
+            text-align: center;
+        }
+
+        .content {
+            position: relative;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            min-height: 100%;
+            overflow-wrap: break-word;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            box-sizing: border-box;
+        }
+
+        .title {
+            font-size: 2em;
+        }
+
+        .h1 {
+            display: block;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            color: #2bbc8a;
+            letter-spacing: .01em;
+            font-weight: 700;
+            font-size: normal;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-top: -4px;
+            margin-bottom: -4px;
+        }
+
+        .no-underline {
+            background-image: none !important;
+        }
+
+        .p {
+            text-align: justify;
+        }
+
+        .row {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 31%;
+            padding: 10px;
+            height: 50%;
+        }
+
+        .h2 {
+            color: #eee;
+            font-weight: 700;
+        }
+
+        .about-list {
+            padding-left: 12px;
+        }
+
+        .ul {
+            line-height: 1.725;
+        }
+
+        .inline {
+            overflow-x: auto;
+            font-size: 13px;
+            font-family: Menlo, Meslo LG, monospace;
+            line-height: 22px;
+            padding: 0 5px;
+            background: #212326;
+            border: 1px dotted #666;
+            display: inline;
+        }
+
+        #footer {
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-flow: row wrap;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            align-items: center;
+            margin-bottom: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: #666;
+            vertical-align: top;
+            text-align: center;
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Message" style="display: none;"></div>
+    <div id="app">
+        <div id="spinner" class="v-spinner" style="display: none;">
+            <div class="v-clip" style="height: 100px; width: 100px; border-width: 2px; border-style: solid; border-color: rgb(43, 188, 138) rgb(43, 188, 138) transparent;
+            border-radius: 100%; background: transparent none repeat scroll 0% 0%;"></div>
+        </div>
+        <div class="content">
+            <h1 class="title">Utsav Gadhiya</h1>
+            <h1 class="subtitle">Software Developer/Cybersecurity Enthusiast</h1>
+            <div>
+                <h1>About Me</h1>
+                <p>My name is Utsav Gadhiya and I'm a Software Developer/Cybersecurity Enthusiast. I'm from Gujarat and
+                    currently working at SRKay Consulting Group.
+                    You can find me on
+                    <a href="https://github.com/utsavgadhiya" target="_blank" class="no-underline">
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </a>
+                    ,
+                    <a href="https://linkedin.com/in/utsav-gadhiya19" target="_blank" class="no-underline">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    or on
+                    <a href="https://twitter.com/utsav_gadhiya" target="_blank" class="no-underline">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                    .
+                </p>
+                <p>
+                    On this page you can find some information about me. I'm most interested in topics
+                    such as Linux, Networking, Security, or about programming languages like
+                    Python or C. I also like to read a lot of books.
+                </p>
+                <div id="cols" class="row">
+                    <div class="column">
+                        <h2>
+                            <i class="fa fa-life-ring"></i>
+                            Life so far...
+                        </h2>
+                        <ul class="about-list">
+                            <li>Breathing since 1999</li>
+                            <li>Completed Bachelors in 2020</li>
+                            <li>Started working at SRKay Consulting Group in 2019</li>
+                            <li>Will be doing my Masters in few years</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h2>
+                            <i class="fa fa-life-ring"></i>
+                            Passionate about...
+                        </h2>
+                        <ul class="about-list">
+                            <li>Network and Security</li>
+                            <li>Scripting in Python</li>
+                            <li>Cloud</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h2>
+                            <i class="fa fa-life-ring"></i>
+                            My Hobbies include...
+                        </h2>
+                        <ul class="about-list">
+                            <li>Reading Books</li>
+                            <li>Doing Exercise</li>
+                            <li>Listening to Music</li>
+                            <li>Reading/Watching Tech News and Videos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h1>Projects</h1>
+                    <p>You can find all of my projects on my
+                        <a class="no-underline" href="https://github.com/utsavgadhiya?tab=repositories" target="_blank">
+                            <i class="fa fa-github-square" aria-hidden="true"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Contact Me</h1>
+                <p>You can reach out to me through
+                    <a class="no-underline" href="https://www.linkedin.com/in/utsav-gadhiya19" target="_blank"></a>
+                    or
+                    <a class="no-underline" href="https://twitter.com/utsav_gadhiya" target="_blank"></a>
+                    , as well as on my mail address at
+                    <code class="inline">utsavpatel3913@gmail.com</code>
+                </p>
+                <footer id="footer">
+                    Copyright © 2020 Utsav Gadhiya
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
