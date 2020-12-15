@@ -1,0 +1,137 @@
+body {
+    height: 100%;
+    color: #c9cacc;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Menlo, Meslo LG, monospace;
+    line-height: 1.725;
+    text-rendering: geometricPrecision;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: 0 auto;
+    max-width: 72rem;
+    box-sizing: border-box;
+}
+
+#Message {
+    position: fixed;
+    left: 1px;
+    bottom: 2px;
+    background-color: #e6e6e6;
+    border: 1px solid #959595;
+    margin: 0px;
+    padding: 2px 8px;
+    z-index: 102;
+    color: black;
+    font-size: 80%;
+    width: auto;
+    white-space: nowrap;
+}
+
+.v-spinner {
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    text-align: center;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    min-height: 100%;
+    overflow-wrap: break-word;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+h1 {
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #2bbc8a;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+    font-size: normal;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: -4px;
+    margin-bottom: -4px;
+}
+
+.no-underline {
+    background-image: none !important;
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 31%;
+    padding: 10px;
+    height: 50%;
+}
+
+h2 {
+    color: #eee;
+    font-weight: 700;
+}
+
+.about-list {
+    padding-left: 12px;
+}
+
+.inline {
+    overflow-x: auto;
+    font-size: 13px;
+    font-family: Menlo, Meslo LG, monospace;
+    line-height: 22px;
+    padding: 0 5px;
+    background: #212326;
+    border: 1px dotted #666;
+    display: inline;
+}
+
+#footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #666;
+    vertical-align: top;
+    text-align: center;
+    font-size: 11px;
+}
+
+.fa {
+    color: white;
+    font-size: 20px;
+}
