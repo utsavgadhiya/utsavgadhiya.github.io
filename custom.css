@@ -3,7 +3,7 @@ body {
     color: #c9cacc;
     font-weight: 400;
     font-size: 14px;
-    font-family: Menlo, Meslo LG, monospace;
+    font-family: Verdana;
     line-height: 1.725;
     text-rendering: geometricPrecision;
     padding-right: 2rem;
@@ -48,8 +48,8 @@ body {
     align-content: stretch;
     min-height: 100%;
     overflow-wrap: break-word;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
     box-sizing: border-box;
 }
 
@@ -63,7 +63,7 @@ h1 {
     margin-bottom: 1rem;
     color: #2bbc8a;
     letter-spacing: 0.01em;
-    font-weight: 700;
+    font-weight: 500;
     font-size: normal;
 }
 
@@ -98,7 +98,7 @@ p {
 
 h2 {
     color: #eee;
-    font-weight: 700;
+    font-weight: 200;
 }
 
 .about-list {
