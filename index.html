@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utsav Gadhiya</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+        media="screen" />
     <style>
         body {
             height: 100%;
@@ -15,7 +17,6 @@
             font-family: Menlo, Meslo LG, monospace;
             line-height: 1.725;
             text-rendering: geometricPrecision;
-            -webkit-box-flex: 1;
             padding-right: 2rem;
             padding-left: 2rem;
             margin: 0 auto;
@@ -39,22 +40,37 @@
         }
 
         #spinner {
+            display: block;
             position: fixed;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            z-index: 100;
+            text-align: center;
         }
 
         .v-spinner {
-            text-align: center;
+            display: none;
+        }
+
+        #v-clip {
+            height: 100px;
+            width: 100px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: rgb(43, 188, 138) rgb(43, 188, 138) transparent;
+            border-radius: 100%;
+            background: transparent none repeat scroll 0% 0%;
         }
 
         .content {
             position: relative;
             display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
             flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: stretch;
             min-height: 100%;
             overflow-wrap: break-word;
             padding-top: 4rem;
@@ -113,10 +129,6 @@
             padding-left: 12px;
         }
 
-        .ul {
-            line-height: 1.725;
-        }
-
         .inline {
             overflow-x: auto;
             font-size: 13px;
@@ -130,12 +142,8 @@
 
         #footer {
             display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
             flex-flow: row wrap;
-            -webkit-box-pack: justify;
             justify-content: space-between;
-            -webkit-box-align: center;
             align-items: center;
             margin-bottom: 20px;
             position: absolute;
@@ -147,14 +155,21 @@
             font-size: 11px;
         }
     </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ajaxStart(function () {
+            $('#spinner').removeClass('v-spinner');
+        }).ajaxStop(function () {
+            $('#spinner').addClass('v-spinner');
+        })
+    </script>
 </head>
 
 <body>
-    <div id="Message" style="display: none;"></div>
+    <!-- <div id="Message" style="display: none;"></div> -->
     <div id="app">
-        <div id="spinner" class="v-spinner" style="display: none;">
-            <div class="v-clip" style="height: 100px; width: 100px; border-width: 2px; border-style: solid; border-color: rgb(43, 188, 138) rgb(43, 188, 138) transparent;
-            border-radius: 100%; background: transparent none repeat scroll 0% 0%;"></div>
+        <div id="spinner" class="v-spinner">
+            <div class="v-clip"></div>
         </div>
         <div class="content">
             <h1 class="title">Utsav Gadhiya</h1>
@@ -232,9 +247,13 @@
             <div class="content">
                 <h1>Contact Me</h1>
                 <p>You can reach out to me through
-                    <a class="no-underline" href="https://www.linkedin.com/in/utsav-gadhiya19" target="_blank"></a>
+                    <a class="no-underline" href="https://www.linkedin.com/in/utsav-gadhiya19" target="_blank">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
                     or
-                    <a class="no-underline" href="https://twitter.com/utsav_gadhiya" target="_blank"></a>
+                    <a class="no-underline" href="https://twitter.com/utsav_gadhiya" target="_blank">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
                     , as well as on my mail address at
                     <code class="inline">utsavpatel3913@gmail.com</code>
                 </p>
