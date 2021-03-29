@@ -1,14 +1,13 @@
-var timeOut;
-
 function timeOutMainPage() {
     document.getElementById("main-content").style.backgroundColor = "white"
-    timeOut = setTimeout(showPage, 2000);
+    var timeOut = setTimeout(showPage, 2000);
 }
 
 function showPage() {
     document.getElementById("main-content").style.backgroundColor = "#1d1f21"
     document.getElementById("spinner").style.display = "none";
     fadeIn();
+    loadYear();
 }
 
 function fadeIn() {
@@ -22,4 +21,9 @@ function fadeIn() {
             clearInterval(intervalID);
         }
     }, 50);
-} 
+}
+
+function loadYear() {
+    var year = new Date().getFullYear();
+    document.getElementById("current-year").innerHTML = year;
+}

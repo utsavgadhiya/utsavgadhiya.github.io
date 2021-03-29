@@ -5,27 +5,11 @@ body {
     font-size: 14px;
     font-family: Verdana;
     line-height: 1.725;
-    text-rendering: geometricPrecision;
     padding-right: 2rem;
     padding-left: 2rem;
     margin: 0 auto;
     max-width: 72rem;
     box-sizing: border-box;
-}
-
-#Message {
-    position: fixed;
-    left: 1px;
-    bottom: 2px;
-    background-color: #e6e6e6;
-    border: 1px solid #959595;
-    margin: 0px;
-    padding: 2px 8px;
-    z-index: 102;
-    color: black;
-    font-size: 80%;
-    width: auto;
-    white-space: nowrap;
 }
 
 .v-spinner {
@@ -120,7 +104,7 @@ h2 {
 #footer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
     position: absolute;
@@ -137,4 +121,19 @@ h2 {
 .fas {
     color: white;
     font-size: 20px;
+}
+
+#current-year {
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+@media only screen and (max-width: 414px) {
+    #cols .column {
+        width: 100%;
+    }
+    #current-year {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 }
