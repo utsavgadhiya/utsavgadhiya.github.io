@@ -2,7 +2,7 @@ body {
     height: 100%;
     color: #c9cacc;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1rem;
     font-family: Verdana;
     line-height: 1.725;
     padding-right: 2rem;
@@ -10,6 +10,8 @@ body {
     margin: 0 auto;
     max-width: 72rem;
     box-sizing: border-box;
+    font-weight: 500;
+    font-family: Menlo,Meslo LG,monospace;
 }
 
 .v-spinner {
@@ -48,7 +50,7 @@ h1 {
     color: #2bbc8a;
     letter-spacing: 0.01em;
     font-weight: 500;
-    font-size: normal;
+    font-size: 1rem;
 }
 
 .subtitle {
