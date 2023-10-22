@@ -6,8 +6,9 @@ import alpinejs from "@astrojs/alpinejs";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), alpinejs()],
-  output: 'server',
+  output: 'dist',
   adapter: vercel({
     analytics: true,
   }),
+  site: 'https://utsavgadhiya.github.io'
 });
