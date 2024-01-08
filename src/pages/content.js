@@ -10,7 +10,7 @@ export const about = "Experienced Software Developer with a proven track record 
 export const work = [
 	{
 		from: "Aug 2023",
-		to: "Oct 2023",
+		to: "Nov 2023",
 		role: "Web Developer Intern",
 		org: "Just Natural Paws",
 		org_url: "https://www.justnaturalpaws.org/",
