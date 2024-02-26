@@ -126,6 +126,18 @@ export const projects = [
 		tech: "JavaScript(Node.js), React, MongoDB",
 	},
 	{
+		title: "ChatRoom",
+		description: "An online real-time chat application.",
+		url: "https://github.com/utsavgadhiya/ChatRoom",
+		tech: "JavaScript(Node.js), Socket.io",
+	},
+	{
+		title: "MovieHub",
+		description: "A movie details application which provides information on various movies.",
+		url: "https://github.com/utsavgadhiya/imdb-movie-service",
+		tech: "Python, Flask",
+	},
+	{
 		title: "ToDoNow",
 		description: "Easy-to-use to-do app for effective task management and organization.",
 		url: "https://github.com/utsavgadhiya/ToDoNow",
