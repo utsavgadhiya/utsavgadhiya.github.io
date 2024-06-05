@@ -4,7 +4,7 @@ export const designation = "Full Stack JavaScript Developer"
 export const location = "Toronto, Canada"
 
 // About
-export const about = "Experienced Software Developer with a proven track record of 2+ years in the industry. Specializing in designing and developing APIs and microservices, I am deeply passionate about backend development, cloud technologies, and DevOps practices."
+export const about = "Hey there! 👋🏼 I'm Utsav. I'm a Full Stack Developer based in Toronto, and I love diving into the world of backend development, cloud tech, and DevOps. With 3 years in the industry, I've gotten my hands dirty with everything from designing APIs and microservices to building sleek single-page applications using React and Angular. My tech toolbox includes Node.js, JavaScript, Java, SQL, MongoDB, and more. I enjoy solving real-world problems with innovative solutions and scaling applications to new heights using cloud technologies. When I'm not coding, you'll probably find me playing cricket or tennis, or jamming out to some good music. I firmly believe that collaboration is the key to innovation, and I'm always excited to connect with fellow tech enthusiasts to share ideas and build the future together. Let's connect and see how we can create something awesome!"
 
 // Work Experience --> #work section
 export const work = [
