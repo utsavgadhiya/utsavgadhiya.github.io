@@ -9,8 +9,8 @@ export const about = "Experienced Software Developer with a proven track record 
 // Work Experience --> #work section
 export const work = [
 	{
-		from: "Aug 2023",
-		to: "Nov 2023",
+		from: "Sept 2023",
+		to: "Dec 2023",
 		role: "Web Developer Intern",
 		org: "Just Natural Paws",
 		org_url: "https://www.justnaturalpaws.org/",
@@ -19,7 +19,7 @@ export const work = [
 	{
 		from: "May 2023",
 		to: "Aug 2023",
-		role: "Software Developer Intern",
+		role: "Full Stack Developer Intern",
 		org: "The Transmogrify",
 		org_url: "https://www.thetransmogrify.com/",
 		location: "Toronto, Canada"
@@ -30,7 +30,7 @@ export const work = [
 		role: "Software Developer",
 		org: "SRKay Consulting Group",
 		org_url: "https://www.srkay.com/",
-		location: "Surat, India"
+		location: "Mumbai, India"
 	}
 ]
 
