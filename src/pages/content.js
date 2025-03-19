@@ -26,8 +26,8 @@ export const work = [
 	},
 	{
 		from: "Dec 2019",
-		to: "Nov 2021",
-		role: "Software Developer",
+		to: "Sep 2021",
+		role: "Associate Software Engineer",
 		org: "SRKay Consulting Group",
 		org_url: "https://www.srkay.com/",
 		location: "Mumbai, India"
